@@ -73,12 +73,12 @@ def predict():
 
                 #Map apparel category with the numerical class
                 product = (class_labels[class_prediction])
-                name = input("Enter patient name:")
-                age = input("Enter age:")
-                phone = input("Enter phone number:")
-                address = input("Enter address:")
-                gender = input("Enter gender:")
-                return render_template('predict.html', product = product, user_image = file_path,name=name,age=age,phone=phone,address=address,gender=gender)
+                #name = input("Enter patient name:")
+                #age = input("Enter age:")
+                #phone = input("Enter phone number:")
+                #address = input("Enter address:")
+                #gender = input("Enter gender:")
+                return render_template('predict.html', product = product, user_image = file_path)
         
     return render_template('predict.html')
 
