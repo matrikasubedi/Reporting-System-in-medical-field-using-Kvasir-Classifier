@@ -36,7 +36,7 @@ def allowed_file(filename):
 
 def init():
     global graph
-    graph = tf.get_default_graph()
+    graph = tf.compat.v1.get_default_graph()
 
 # Function to load and prepare the image in right shape
 def read_image(filename):
