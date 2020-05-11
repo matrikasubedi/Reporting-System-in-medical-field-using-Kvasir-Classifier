@@ -68,10 +68,10 @@ def predict():
                 img = read_image(file_path)
                 # Predict the class of an image
 
-                with graph.as_default():
-                    model1 = load_model('kvasir.h5')
-                    class_prediction = np.argmax(model1.predict(img))
-                    print(class_prediction)
+             
+                model1 = load_model('kvasir.h5')
+                class_prediction = np.argmax(model1.predict(img))
+                print(class_prediction)
 
                 #Map apparel category with the numerical class
                 product = (class_labels[class_prediction])
